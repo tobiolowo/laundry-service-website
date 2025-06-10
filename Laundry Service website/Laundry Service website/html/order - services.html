@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/order - services.css">
+    <title>Place Your Order | Lavender</title>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo"><i class="fas fa-tshirt"></i> Lavender <span> Laundry</span></a>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Hero Section with Image -->
+<section class="hero">
+    <div class="hero-image">
+        <img src="../images/me.jpg" alt="Laundry Mart Facilities">
+    </div>
+    <div class="hero-content">
+        <h1>Our Services</h1>
+        <p>We offer our customers the best</p>
+    </div>
+</section>
+
+<!-- Service Items -->
+<section>
+    <div class="service-item">
+        <img src="../images/self-service.png" alt="Self Laundry">
+        <div class="service-text">
+            <h3>Self Laundry Service</h3>
+            <p>₦2500</p>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="../images/dryc.png" alt="Dry Cleaning">
+        <div class="service-text">
+            <h3>Dry Cleaning</h3>
+            <p>₦3000</p>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="../images/wash and fold.png" alt="Wash and Fold">
+        <div class="service-text">
+            <h3>Wash and Fold</h3>
+            <p>₦3500</p>
+        </div>
+    </div>
+
+    <div class="service-item">
+        <img src="../images/p&d.png" alt="Pickup and Delivery">
+        <div class="service-text">
+            <h3>Pickup & Delivery</h3>
+            <p>₦4000</p>
+        </div>
+    </div>
+</section>
+
+<!-- Order Form -->
+<form id="service-form">
+    <h3>Fill Your Form</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required />
+
+    <label for="service">Select Service:</label>
+    <select id="service" required>
+        <option value="">-- Choose Service --</option>
+        <option value="Washing and Folding">Washing and Folding</option>
+        <option value="Self Service">Self Service</option>
+        <option value="Dry Cleaning">Dry Cleaning</option>
+        <option value="Ironing">Ironing</option>
+    </select>
+
+    <label for="pickup">Pickup or Drop-off:</label>
+    <select id="pickup" required>
+        <option value="">-- Choose Option --</option>
+        <option value="Drop off">I'll drop the clothes</option>
+        <option value="Pickup">Come pick them up</option>
+    </select>
+
+    <label for="delivery">Delivery Option:</label>
+    <select id="delivery" required>
+        <option value="">-- Choose Option --</option>
+        <option value="Deliver">Deliver to me</option>
+        <option value="Pickup Myself">I'll pick them up myself</option>
+    </select>
+
+    <button type="submit">Order Now</button>
+</form>
+
+<!-- Receipt Section -->
+<div id="receipt" style="display:none;">
+    <h3>Receipt</h3>
+    <ul id="receipt-list"></ul>
+    <p id="total-cost"></p>
+</div>
+
+<script src="../js/order - services.js"></script>
+</body>
+</html>

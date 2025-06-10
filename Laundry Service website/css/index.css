@@ -1,0 +1,588 @@
+:root {
+    /* Defining custom color variables */
+    --primary-color: #C68F8F; /* Muted Rose */
+    --secondary-color: #E4C4C4; /* Soft Blush */
+    --accent-color: #8B5E5E; /* Deep Mauve */
+    --background-color: #F7E6E6; /* Pale Pink */
+    --text-color: #2D2D2D; /* Dark Charcoal */
+}
+
+* {
+    /* Universal reset for margins and padding, box-sizing for consistency */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transitions for all elements */
+}
+
+body {
+    /* General styling for body */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); /* Use the background color defined in :root */
+    color: var(--text-color); /* Use text color variable */
+    text-align: center; /* Center text alignment */
+}
+
+section img {
+    /* Ensuring images within sections have a fixed size */
+    width: 200px;
+    height: 200px;
+}
+
+/* Header Styling */
+header {
+    /* Header layout */
+    background-color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--box-shadow); /* Add shadow for depth */
+    z-index: 100; /* Ensure header stays on top */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: var(--primary-color); /* Styling for icon inside the logo */
+    margin-right: 10px;
+}
+
+.logo span {
+    color: var(--primary-color); /* Styling for the text part of the logo */
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    display: flex;
+    list-style: none; /* Remove list styling */
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+/* Menu Toggle Icon for mobile */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 1.8rem; /* Ensures it's large enough to see */
+    color: var(--secondary-color); /* Adjust icon color */
+    padding: 10px;
+    border: none;
+    background-color: transparent; /* No background */
+}
+
+.container img{
+    width: 400px;
+    height: 200px;
+}
+
+/* Hero Section Styling */
+.hero {
+    padding-top: 30px;
+    background-color: var(--background-color);
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-desc {
+    width: 40%;
+}
+
+.hero-desc > * {
+    color: var(--text-color); /* Ensure text is using the correct color */
+}
+
+.hero-desc h1 {
+    font-size: 38px;
+}
+
+.hero-desc p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.hero-desc a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 40px 20px;
+    background: var(--secondary-color);
+}
+
+.how-it-works h1 {
+    color: var(--accent-color);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.card h1 {
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.why-lavender {
+    padding: 50px 20px;
+    background-color: var(--background-color);
+}
+
+.image-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: var(--background-color);
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#auth-links {
+    margin-top: 20px;
+}
+
+#auth-links .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Authentication Buttons Styling */
+#auth-links {
+    margin-top: 20px;
+}
+
+.btn {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.premium-cta {
+    background-color: var(--secondary-color);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.premium-cta-content h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.premium-cta-content p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.premium-btn,
+.modal-btn {
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.premium-btn:hover,
+.modal-btn:hover {
+    background-color: #703c3c;
+    transform:translateY(3px);
+    box-shadow: #703c3c;
+}
+
+  /* Modal Styling */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-box {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.modal-box h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.modal-box p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Specific Button Styles */
+#check-availability,
+#order,
+#review {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Review Section Layout */
+.review-order-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: white;
+}
+
+.review-board, .order-instructions {
+    max-width: 400px;
+}
+
+.review-board h2, .order-instructions h2 {
+    color: var(--accent-color);
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+#review {
+    background: var(--primary-color);
+    color: white;
+}
+
+#review:hover {
+    background: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Order Instructions Styling */
+.order-instructions {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#order {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+#order:hover {
+    background: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Availability Checker Section */
+#checkme {
+    background-image: url('/images/home.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.availability-checker {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 400px;
+    text-align: center;
+}
+
+#hostel-input {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#check-availability {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#check-availability:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--primary-color);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 50px 0 20px;
+}
+
+/* Footer content layout */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+/* Footer logo and contact */
+.footer-logo {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer links and hours */
+.footer-links h3, .footer-hours h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-hours p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+/* Social media icon styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Copyright notice */
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    .review-order-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the icon on small screens */
+  }
+
+  /* Navigation Links */
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%; /* Adjust to the width of the screen */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure it’s above other content */
+    border-radius: 8px;
+  }
+
+  /* Show the links when the menu toggle is clicked */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0; /* Space out the links */
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    text-align: center; /* Center text */
+  }
+
+  .nav-links a:hover {
+    color: var(--primary-color); /* Adjust hover color */
+  }
+}
+

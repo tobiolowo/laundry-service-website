@@ -1,0 +1,265 @@
+:root {
+    --primary-color: #C68F8F; /* Muted Rose */
+    --secondary-color: #E4C4C4; /* Soft Blush */
+    --accent-color: #8B5E5E; /* Deep Mauve */
+    --background-color: #F7E6E6; /* Pale Pink */
+    --text-color: #2D2D2D; /* Dark Charcoal */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Menu Toggle Icon */
+.menu-toggle {
+display: none;  /* Hidden by default */
+    cursor: pointer;
+    font-size: 1.8rem;  /* Ensure it's large enough to see */
+    color: var(--secondary-color);  /* Or any color that contrasts with the background */
+    padding: 10px;  /* Add some space around the icon */
+    border: none;
+    background-color: transparent;  /* Ensure no background */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.wrapper .card {
+    max-width: 300px;
+    background-color: white;
+    padding: 40px;
+    margin: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.wrapper .card.active {
+    background-color: var(--text-color);
+    transform: scale(1, 1.09);
+}
+
+.wrapper .card.active h1 span{
+    color: white;
+}
+
+.wrapper .card.active li, .wrapper .card.active p{
+    color: white;
+}
+
+.wrapper .card h3 {
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+.wrapper .card.active h3 {
+    color: white;
+}
+
+.wrapper .card.active a{
+    margin: 20px 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border: 1px solid white;
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.wrapper .card h1 {
+    margin-bottom: 10px;
+    color: rgb(231, 194, 160);
+    font-size: 2.5em;
+}
+
+.wrapper .card h1 span {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.wrapper .card p {
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 1);
+    font-size: large;
+    line-height: 1.5;
+}
+
+.wrapper .card ul {
+    list-style: none;
+}
+
+.wrapper .card ul li {
+    line-height: 3;
+    color: var(--text-color);
+}
+
+.wrapper .card ul li i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.wrapper .card a {
+    margin: 20px 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--accent-color);
+    background-color: white;
+    color: var(--accent-color);
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.wrapper .card a:hover {
+    background-color: var(--text-color);
+    color: white;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+    display: block;  /* Show the icon on small screens */
+    }
+
+  /* Navigation Links */
+    .nav-links {
+    display: none;  /* Hide links by default */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;  /* Adjust to the width of the screen */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;  /* Ensure it’s above other content */
+    border-radius: 8px;
+    }
+
+  /* Show the links when the menu toggle is clicked */
+    .nav-links.active {
+    display: flex;
+    }
+
+    .nav-links a {
+    padding: 10px 0;  /* Space out the links */
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    text-align: center;  /* Center text */
+    }
+
+    .nav-links a:hover {
+    color: var(--primary-color);  /* Adjust hover color */
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wrapper .card {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+.btn{
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: translateY(-3px);;
+    box-shadow: var(--accent-color);
+}
+

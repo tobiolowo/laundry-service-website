@@ -1,0 +1,269 @@
+/* Define color variables for easy reuse across the site */
+:root {
+    --primary-color: #C68F8F; /* Muted Rose */
+    --secondary-color: #E4C4C4; /* Soft Blush */
+    --accent-color: #8B5E5E; /* Deep Mauve */
+    --background-color: #F7E6E6; /* Pale Pink */
+    --text-color: #2D2D2D; /* Dark Charcoal */
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Sets the font for the body */
+    background-color: var(--background-color); /* Uses background color variable */
+    color: var(--text-color); /* Sets the text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header bar styles */
+header {
+    background-color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--box-shadow); /* Define this if used */
+    z-index: 100;
+}
+
+/* Navbar layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hamburger menu for small screens */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/* Hero Section styling */
+.hero {
+    position: relative;
+    text-align: center; /* Centers the text inside the hero section */
+    padding: 4rem 2rem; /* Adds padding inside the hero section */
+}
+
+/* Hero image styling */
+.hero-image img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Hero content styling for the heading */
+.hero-content h1 {
+    margin-top: 2rem; /* Adds top margin */
+    font-size: 2.5rem; /* Sets font size */
+}
+
+/* Hero content styling for paragraph */
+.hero-content p {
+    font-size: 1.2rem; /* Sets font size for the paragraph */
+    margin-top: 0.5rem; /* Adds margin above the paragraph */
+}
+
+/* Service Grid layout */
+.service-grid {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+    gap: 2rem; /* Adds space between grid items */
+    padding: 2rem; /* Adds padding inside the grid container */
+}
+
+/* Service item styling */
+.service-item {
+    position: relative; /* Positions the text content inside each service block */
+    overflow: hidden; /* Prevents content from overflowing */
+    border-radius: 15px; /* Rounds the corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    background-color: white; /* Sets background color to white */
+    transition: transform 0.3s ease; /* Adds smooth hover animation */
+    cursor: pointer; /* Changes cursor on hover */
+}
+
+/* Hover effect for service items */
+.service-item:hover {
+    transform: translateY(-5px); /* Moves the item upwards on hover */
+}
+
+/* Service image styling */
+.service-item img {
+    width: 100%; /* Makes the image responsive */
+    height: 220px; /* Fixes the image height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+/* Styling for the text inside each service item */
+.service-text {
+    position: absolute; /* Positions the text at the bottom */
+    bottom: 0;
+    background: rgba(139, 94, 94, 0.8); /* Semi-transparent background */
+    color: white; /* Sets text color to white */
+    width: 100%;
+    padding: 1rem; /* Adds padding around the text */
+    text-align: center; /* Centers the text */
+}
+
+/* Heading inside service text */
+.service-text h3 {
+    margin: 0; /* Removes margin */
+    font-size: 1.2rem; /* Sets font size */
+}
+
+/* Paragraph inside service text */
+.service-text p {
+    margin: 0; /* Removes margin */
+    font-weight: bold; /* Makes the text bold */
+}
+
+/* Form section styling */
+form {
+    background-color: white; /* Sets background color for the form */
+    padding: 2rem; /* Adds padding inside the form */
+    border-radius: 16px; /* Rounds the corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow around the form */
+    margin: 2rem auto; /* Centers the form horizontally */
+    max-width: 600px; /* Limits form width */
+}
+
+/* Form heading styling */
+form h3 {
+    text-align: center; /* Centers the heading */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+/* Label styling inside the form */
+form label {
+    display: block; /* Makes label display as block element */
+    margin-top: 1rem; /* Adds top margin */
+    font-weight: bold; /* Makes label text bold */
+}
+
+/* Input and select styling inside the form */
+form input, form select {
+    width: 100%; /* Makes input and select fields take up full width */
+    padding: 0.5rem; /* Adds padding inside the fields */
+    border-radius: 8px; /* Rounds the corners */
+    border: 1px solid #ccc; /* Adds a border with light gray color */
+    margin-top: 0.5rem; /* Adds margin above the fields */
+}
+
+/* Button styling inside the form */
+form button {
+    background-color: var(--accent-color); /* Uses accent color for the button */
+    color: white; /* Sets text color to white */
+    border: none; /* Removes border */
+    padding: 0.75rem 2rem; /* Adds padding inside the button */
+    margin-top: 1.5rem; /* Adds margin above the button */
+    border-radius: 8px; /* Rounds the corners */
+    font-size: 1rem; /* Sets font size */
+    cursor: pointer; /* Changes cursor to pointer */
+    display: block; /* Makes the button a block-level element */
+    width: 100%; /* Makes the button take up the full width */
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #6a4242; /* Changes button color on hover */
+}
+
+/* Receipt section styling */
+#receipt {
+    display: none; /* Hides the receipt by default */
+    margin-top: 2rem; /* Adds top margin */
+    background-color: white; /* Sets background color */
+    padding: 2rem; /* Adds padding inside the receipt */
+    border-radius: 16px; /* Rounds the corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow around the receipt */
+}
+
+/* Receipt heading styling */
+#receipt h3 {
+    text-align: center; /* Centers the heading */
+}
+
+/* Styling for the list inside the receipt */
+#receipt ul {
+    list-style: none; /* Removes default list style */
+    padding: 0; /* Removes padding */
+}
+
+/* Styling for each item in the receipt list */
+#receipt li {
+    padding: 0.5rem 0; /* Adds padding inside each list item */
+    border-bottom: 1px solid #ddd; /* Adds a bottom border for each item */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 99;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+}

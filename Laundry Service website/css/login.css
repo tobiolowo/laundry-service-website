@@ -1,0 +1,126 @@
+/* Import Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #C68F8F;  /* Muted Rose */
+    --secondary-color: #E4C4C4; /* Soft Blush */
+    --accent-color: #8B5E5E; /* Deep Mauve */
+    --background-color: #F7E6E6; /* Pale Pink */
+    --text-color: #2D2D2D; /* Dark Charcoal */
+    --input-bg: #ffffff; /* White */
+    --button-hover: #724747; /* Darker Mauve */
+}
+
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.container {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Heading */
+h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--input-bg);
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background: var(--accent-color);
+    color: var(--button-hover);
+}
+
+button a {
+    color: var(--background-color);
+    text-decoration: none;
+}
+/* Sign Up Link */
+p {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+p a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%; /* Make form wider on smaller screens */
+    }
+
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+
+    h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review</title>
+    <link rel="stylesheet" href="/css/review.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="review-container">
+            <h2>Rate Our Service</h2>
+
+            <!-- Star Rating -->
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+
+            <!-- Review Input -->
+            <textarea id="review-text" placeholder="Write your review..."></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit-review">Submit Review</button>
+
+            <!-- Display Reviews -->
+            <ul id="review-list"></ul>
+
+            <button onclick="location.href='index.html'" class="btn" id="back">Back to Homepage</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2025 Laundry Mart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="review.js"></script>
+</body>
+</html>

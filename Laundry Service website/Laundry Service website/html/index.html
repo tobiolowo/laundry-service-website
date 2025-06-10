@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender laundry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<script src="/js/index.js"></script>
+<body>
+        <!-- Header with Navigation -->
+        <header>
+            <nav class="navbar">
+                <a href="./index.html" class="logo"><i class="fas fa-tshirt"></i> Lavender <span> Laundry</span></a>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./order - services.html">Services</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+    <section>
+        <div class="hero">
+            <div class="container">
+                <div class="hero-desc">
+                    <h1>Get your laundry and dry cleaning done within 24hrs max</h1>
+                    <p> Just <b>smile</b> & <b>relax</b> We will do the dirty work and return your clothes smelling like Lavender</p>
+                </div>
+                <img src="/images/IMG_E7496.JPG" alt="woman hanging clothes" />
+            </div>
+        </div>
+        <section>
+        <div class="how-it-works">
+            <div class="container">
+                <h1>How it works</h1>
+                <p>This is our process for customers</p>
+                <div class="row">
+                    <div class="card">
+                        <i class="fa-regular fa-square-check"></i>
+                        <h1>Get a Price</h1>
+                        <p>Tell us about you and how you like your clothes and your dry cleaning needs</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                            <h1>Book a pickup</h1>
+                            <p>Tell us how you would like to get your laundry </p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-bed"></i>
+                        <h1>Breathe & Relax</h1>
+                        <p>Tell us when you will like your laundry and relax</p>
+                    </div>
+            </div>
+        </section>
+    </section>
+    <section class="why-lavender">
+        <div class="Why main-spacing">
+            <div class="container">
+                <h1>Why Lavender Laundry</h1>
+                <p>The only laundry service that understands the value of your time and your clothes.</p>
+                <div class="row-spacing">
+                    <div class="row">
+                        <div class="card">
+                            <i class="fa-regular fa-square-check"></i>
+                            <h1>Affordable & Transparent Pricing</h1>
+                            <p>We offer unbeatable prices with no hidden fees. Get a clear, upfront quote based on your laundry needs.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <h1>Convenient Pickup & Delivery</h1>
+                            <p>With just a few clicks, schedule a hassle-free pickup and enjoy fast delivery to your doorstep, whenever you need it.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fa-solid fa-bed"></i>
+                            <h1>Stress-Free Service</h1>
+                            <p>Let us take care of your laundry while you relax. Our professional team ensures your clothes are clean, fresh, and ready when you need them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Trigger Button -->
+<section class="premium-cta">
+    <div class="premium-cta-content">
+        <h2>Become a Premium Member</h2>
+        <p>Get exclusive discounts, faster delivery, and priority support when you join our premium membership.</p>
+        <button id="openPremiumModal" class="premium-btn">Join Now</button>
+    </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="premiumModal" class="modal-overlay">
+    <div class="modal-box">
+        <span class="close-modal" id="closePremiumModal">&times;</span>
+        <h3>Join Premium Membership</h3>
+        <p>Subscribe to become a premium member and enjoy VIP services.</p>
+        <a href="./pricing.html" class="modal-btn">Proceed to Join</a>
+    </div>
+</div>
+
+
+    <!-- Image Section (Now Separate) -->
+    <section class="image-section">
+        <div class="container">
+            <img src="/images/OIP.jpeg" alt="Laundry Service Image">
+            <div id="auth-links">
+                <button onclick="location.href='login.html'" class="btn">Login</button>
+                <button onclick="location.href='signup.html'" class="btn btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </section>
+<div id="checkme">
+    <div class="availability-checker">
+        <h3>Check Service Availability</h3>
+        <label for="hostel-input">Enter Your Hostel:</label>
+        <input type="text" id="hostel-input" placeholder="e.g., Queen Esther Hostel">
+        <button id="check-availability">Check</button>
+        <p id="availability-result"></p>
+    </div>
+</div>
+    <section class="review-order-wrapper">
+        <div class="container">
+            <div class="review-board">
+                <h2>Customer Reviews</h2>
+                <ul id="review-list">
+                    <div class="review-section">
+                        <div class="review">
+                            <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+                            <p>"Great service! My clothes were so fresh and clean!" - Jane D.</p>
+                        </div>
+                        <div class="review">
+                            <p>⭐ ⭐ ⭐ ⭐</p>
+                            <p>"Quick delivery and professional work!" - Mike T.</p>
+                            </div>
+                            <button onclick="location.href='review.html'" class="btn" id="review" >Submit Review</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+            <div class="order-instructions">
+                <h2>How to Place an Order</h2>
+                <p>1. Sign up or log in to your account.</p>
+                <p>2. Select your laundry service and add details.</p>
+                <p>3. Confirm your order and pick a delivery time.</p>
+                <p>4. Pay online or choose cash on delivery.</p>
+                <p>5. Our team will handle the rest!</p>
+                    <a href="order.html" class="btn" id="order">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <i class="fas fa-tshirt"></i> Lavender Mart
+                </div>
+                <div class="footer-contact">
+                    <p>Email: info@lavendermart.com</p>
+                    <p>Phone: +234 123 456 7890</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+
+                    <li><a href="./order - services.html">Services</a></li>
+                    <li><a href="./pricing.html">Become a Member</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Self-Service Laundry</a></li>
+                    <li><a href="#">Wash & Fold</a></li>
+                    <li><a href="#">Dry Cleaning</a></li>
+                    <li><a href="#">Specialty Items</a></li>
+                    <li><a href="#">Commercial Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p><strong>Main Boy's Hostel:</strong> Open 24/7</p>
+                <p><strong>Girls Hostel:</strong> 6AM - 10PM Daily</p>
+                <p><strong>Engineering Hostel:</strong> 7AM - 11PM Daily</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Laundry Mart. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

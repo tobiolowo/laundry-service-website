@@ -1,0 +1,188 @@
+body {
+    background-image: url(/images/me.jpg);
+    background-color: #F7E6E6; /* Pale Pink */
+    color: #2D2D2D; /* Dark Charcoal */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.review-container {
+    max-width: 500px;
+    margin: 40px 40px 40px 800px;
+    padding: 20px;
+    background: white; /* Soft Blush */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2, h3 {
+    color: #8B5E5E; /* Deep Mauve */
+}
+
+.star {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star.selected {
+    color: #FFD700; 
+}
+
+.star:hover, .star.selected {
+    color: #FFD700;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #C68F8F; /* Muted Rose */
+    border-radius: 5px;
+    background: white;
+    color: #2D2D2D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #C68F8F; /* Muted Rose */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #724747; /* Darker Mauve */
+    color: white;
+}
+
+#back {
+    background-color: #8B5E5E; /* Deep Mauve */
+    color: white;
+}
+#back:hover {
+    background-color: white;
+    color: #8B5E5E;
+}
+
+#review-list {
+    list-style: none;
+    padding: 0;
+}
+
+#review-list li {
+    background: #C68F8F; /* Muted Rose */
+    color: #2D2D2D; /* Dark Charcoal */
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #8B5E5E; /* Deep Mauve */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .review-container {
+        width: 90%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background: #8B5E5E;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .star {
+        font-size: 25px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .review-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .star {
+        font-size: 20px;
+    }
+
+    textarea {
+        height: 80px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
